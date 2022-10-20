@@ -1,0 +1,138 @@
+:root{
+    --bg-divmain-color:black;
+    --bg-div2-color:#222831;
+    --bg-cfooter-color:#020202;
+    --text-color:#E7F6F2;
+    --email-bg-color:white;
+    --linkedin-bg-color:#198FBD;
+--linkedin-txt-color:black;
+--email-txt-color:black;
+}
+
+.mycards-main-div{
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--bg-divmain-color);
+}
+
+.mycard-2nd-div {
+    
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--bg-divmain-color);
+}
+.mycard-3nd-div {
+    position: relative;
+
+    color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+text-align: center;
+flex-wrap: wrap;
+width: 300px;
+box-shadow: 2px 4px 10px black;
+border-radius: 15px;
+background-color: var(--bg-div2-color);
+animation: cloud1 3s  forwards ;
+
+}
+.cardimg {
+  height: 300px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.mycard-email-linkedln-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+
+}
+.email-div{
+cursor: pointer;
+    background-color: var(--email-bg-color);
+
+color: var(--email-txt-color);
+   padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+}
+
+.emailicon{
+    padding-right:5px ;
+    width: 15px;
+    height: 15px;
+}
+.linkedln-div{
+    cursor: pointer;
+    background-color: var(--linkedin-bg-color);
+color: var(--linkedin-txt-color);
+    padding: 5px 10px 5px 10px;
+   
+
+    border-radius: 10px;
+
+}
+.linkedinicon{
+    padding-right:5px ;
+    width: 15px;
+    height: 15px;
+}
+em{
+    font-size: 17px;
+}
+.about-div{
+color: var(--text-color);
+  text-align: start;
+  padding: 5px 10px 5px 10px;
+}
+.about-div> h3 , .hobbies-div>h3{
+    font-size: 25px;
+    
+}
+.about-div> p , .hobbies-div>p{
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+.hobbies-div{
+    color: var(--text-color);
+    text-align: start;
+  padding: 5px 10px 5px 10px;  
+}
+.mycard-footer{
+
+    padding: 10px 0px 10px 0px;
+    background-color: var(--bg-cfooter-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.facebookic, .twiteric,.instaic,.githubic{
+   
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+   
+}
+.fb-div , .twt-div,.inst-div ,.gh-div{
+    cursor: pointer;
+    background-color: white;
+  border-radius: 20px;
+    width: 30px;
+    height: 30px;
+}
+@keyframes cloud1 {
+   100% {
+      left: 0%;
+    }
+   
+    0%{
+   left:-50%
+    }
+  }
